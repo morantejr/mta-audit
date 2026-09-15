@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.23"
+          enable-cache: true
+      - run: uv sync --frozen --extra dev --python ${{ matrix.python-version }}
+      - run: uv run --no-sync pytest
+      - run: uv run --no-sync ruff check src tests
+      - run: uv run --no-sync mypy

@@ -1,0 +1,253 @@
+{
+  "sampling": "Explicit representative sample of 8000 users (requested sample_users=8000) from the Criteo extract (16.5M impressions / ~700 campaigns in the full public file). This is not silent downsampling.",
+  "n_events": 21307,
+  "n_users": 8000,
+  "n_campaigns": 639,
+  "journey_summary": {
+    "journey_count": 8144,
+    "converter_count": 586,
+    "non_converter_count": 7558,
+    "unique_path_count": 3198,
+    "average_path_length": 2.493000982318271
+  },
+  "timings_seconds": {
+    "load": 19.425784000195563,
+    "journeys": 1.331629083957523,
+    "attribution": 5.243745707906783,
+    "baseline_audit": 24.796287999954075
+  },
+  "memory": {
+    "tracemalloc_current_mb": 11.600905418395996,
+    "tracemalloc_peak_mb": 2936.1647443771362,
+    "ru_maxrss_mb": 2913.921875
+  },
+  "baseline_reliability": 72.34535983180399,
+  "baseline_components": {
+    "data_quality": 59.25,
+    "path_quality": 61.8105368420819,
+    "model_agreement": 93.34183690589953
+  },
+  "identity_loss": [
+    {
+      "scenario": "Baseline",
+      "reliability": 72.35,
+      "attribution_drift": 0.0,
+      "rank_corr": 1.0,
+      "journeys": 8144,
+      "unique_paths": 3198,
+      "avg_path_length": 2.493000982318271,
+      "model_agreement": 93.34183690589953,
+      "data_quality": 59.25,
+      "path_quality": 61.8105368420819
+    },
+    {
+      "scenario": "5% identity loss",
+      "reliability": 72.36,
+      "attribution_drift": 0.0,
+      "rank_corr": 0.9989,
+      "journeys": 8335,
+      "unique_paths": 3187,
+      "avg_path_length": 2.4382723455308937,
+      "model_agreement": 93.45766277340721,
+      "data_quality": 59.05,
+      "path_quality": 61.96947208835717
+    },
+    {
+      "scenario": "10% identity loss",
+      "reliability": 72.37,
+      "attribution_drift": 0.0032,
+      "rank_corr": 0.9977,
+      "journeys": 8526,
+      "unique_paths": 3161,
+      "avg_path_length": 2.3866995073891624,
+      "model_agreement": 93.4011366023622,
+      "data_quality": 58.95,
+      "path_quality": 62.24010811891384
+    },
+    {
+      "scenario": "20% identity loss",
+      "reliability": 72.28,
+      "attribution_drift": 0.0102,
+      "rank_corr": 0.9833,
+      "journeys": 8908,
+      "unique_paths": 3126,
+      "avg_path_length": 2.290300853165694,
+      "model_agreement": 93.61101699339854,
+      "data_quality": 58.15,
+      "path_quality": 62.68759943814136
+    },
+    {
+      "scenario": "30% identity loss",
+      "reliability": 72.43,
+      "attribution_drift": 0.0048,
+      "rank_corr": 0.9924,
+      "journeys": 9290,
+      "unique_paths": 3120,
+      "avg_path_length": 2.1993541442411195,
+      "model_agreement": 93.54715147284773,
+      "data_quality": 58.4,
+      "path_quality": 62.99607959719635
+    }
+  ],
+  "touchpoint_loss": [
+    {
+      "scenario": "Baseline",
+      "reliability": 72.35,
+      "attribution_drift": 0.0,
+      "rank_corr": 1.0,
+      "journeys": 8144,
+      "unique_paths": 3198,
+      "avg_path_length": 2.493000982318271,
+      "model_agreement": 93.34183690589953,
+      "data_quality": 59.25,
+      "path_quality": 61.8105368420819
+    },
+    {
+      "scenario": "5% touchpoint loss",
+      "reliability": 72.33,
+      "attribution_drift": 0.0039,
+      "rank_corr": 0.99,
+      "journeys": 7943,
+      "unique_paths": 3102,
+      "avg_path_length": 2.432204456754375,
+      "model_agreement": 93.54840663874604,
+      "data_quality": 59.1,
+      "path_quality": 61.67877936047084
+    },
+    {
+      "scenario": "10% touchpoint loss",
+      "reliability": 72.61,
+      "attribution_drift": 0.0077,
+      "rank_corr": 0.9862,
+      "journeys": 7709,
+      "unique_paths": 2983,
+      "avg_path_length": 2.377870022052147,
+      "model_agreement": 93.81489609459759,
+      "data_quality": 59.35,
+      "path_quality": 62.00755404129011
+    },
+    {
+      "scenario": "20% touchpoint loss",
+      "reliability": 72.95,
+      "attribution_drift": 0.0157,
+      "rank_corr": 0.9755,
+      "journeys": 7261,
+      "unique_paths": 2743,
+      "avg_path_length": 2.254510398016802,
+      "model_agreement": 93.94148380373547,
+      "data_quality": 59.65,
+      "path_quality": 62.6923479536119
+    },
+    {
+      "scenario": "30% touchpoint loss",
+      "reliability": 73.16,
+      "attribution_drift": 0.0216,
+      "rank_corr": 0.9723,
+      "journeys": 6727,
+      "unique_paths": 2509,
+      "avg_path_length": 2.140924632079679,
+      "model_agreement": 94.13379634968506,
+      "data_quality": 60.1,
+      "path_quality": 62.59199091176248
+    }
+  ],
+  "duplicates": [
+    {
+      "scenario": "1% duplicate events",
+      "reliability": 50.7,
+      "duplicates_detected": true,
+      "duplicate_rows_injected": 213
+    },
+    {
+      "scenario": "5% duplicate events",
+      "reliability": 50.5,
+      "duplicates_detected": true,
+      "duplicate_rows_injected": 1065
+    },
+    {
+      "scenario": "10% duplicate events",
+      "reliability": 50.2,
+      "duplicates_detected": true,
+      "duplicate_rows_injected": 2131
+    }
+  ],
+  "conversion_window": {
+    "score": 88.23577782729578,
+    "message": "Attribution across 5 windows has minimum rank correlation 0.588 and maximum share volatility 2.9%."
+  },
+  "contamination": {
+    "score": 92.5,
+    "message": "180 of 8000 users (2.2%) convert after the short window but within the reference window.",
+    "details_available": true
+  },
+  "model_shares_linear_top10": [
+    {
+      "channel": "15184511",
+      "attribution_credit": 33.91666666666666,
+      "share": 0.0578782707622298,
+      "conversions": 33.91666666666666
+    },
+    {
+      "channel": "32368244",
+      "attribution_credit": 24.18928571428573,
+      "share": 0.04127864456362754,
+      "conversions": 24.18928571428573
+    },
+    {
+      "channel": "28351001",
+      "attribution_credit": 21.34747474747474,
+      "share": 0.0364291377943255,
+      "conversions": 21.34747474747474
+    },
+    {
+      "channel": "10341182",
+      "attribution_credit": 16.738095238095234,
+      "share": 0.028563302454087437,
+      "conversions": 16.738095238095234
+    },
+    {
+      "channel": "16922675",
+      "attribution_credit": 16.499999999999986,
+      "share": 0.0281569965870307,
+      "conversions": 16.499999999999986
+    },
+    {
+      "channel": "6810200",
+      "attribution_credit": 12.83333333333334,
+      "share": 0.02189988623435724,
+      "conversions": 12.83333333333334
+    },
+    {
+      "channel": "9100692",
+      "attribution_credit": 11.0,
+      "share": 0.018771331058020483,
+      "conversions": 11.0
+    },
+    {
+      "channel": "5061834",
+      "attribution_credit": 10.916666666666668,
+      "share": 0.01862912400455063,
+      "conversions": 10.916666666666668
+    },
+    {
+      "channel": "9100693",
+      "attribution_credit": 10.666666666666666,
+      "share": 0.018202502844141072,
+      "conversions": 10.666666666666666
+    },
+    {
+      "channel": "30801593",
+      "attribution_credit": 10.583333333333329,
+      "share": 0.018060295790671213,
+      "conversions": 10.583333333333329
+    }
+  ],
+  "methodological_notes": [
+    "Criteo has anonymized campaigns, not named media channels.",
+    "The adapter marks one conversion event per conversion_id; it does not treat every impression-level conversion flag as a conversion.",
+    "Timestamps are seconds from the first impression, converted with unit='s'.",
+    "Attribution remains observational and does not establish incrementality.",
+    "Explicit representative sample of 8000 users (requested sample_users=8000) from the Criteo extract (16.5M impressions / ~700 campaigns in the full public file). This is not silent downsampling.",
+    "Markov removal effects are computed with a numpy transition matrix; all observed campaigns remain states unless MarkovAttribution(max_channels=...) is set explicitly."
+  ]
+}

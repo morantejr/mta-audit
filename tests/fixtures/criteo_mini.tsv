@@ -1,0 +1,7 @@
+timestamp	uid	campaign	conversion	conversion_timestamp	conversion_id	attribution	click	click_pos	click_nb	cost	cpo	time_since_last_click	cat1	cat2	cat3	cat4	cat5	cat6	cat7	cat8	cat9
+0	1	100	1	400	9	1	1	0	2	0.10	1.0	-1	0	0	0	0	0	0	0	0	0
+80	1	200	1	400	9	1	1	1	2	0.20	1.0	80	0	0	0	0	0	0	0	0	0
+500	1	300	1	400	9	1	0	-1	2	0.05	1.0	420	0	0	0	0	0	0	0	0	0
+50	2	100	0	-1	-1	0	0	-1	0	0.10	0.0	-1	0	0	0	0	0	0	0	0	0
+90	2	400	0	-1	-1	0	1	-1	0	0.30	0.0	-1	0	0	0	0	0	0	0	0	0
+10	3	100	1	20000	11	0	1	0	1	0.15	1.0	-1	0	0	0	0	0	0	0	0	0

@@ -1,0 +1,6 @@
+journey_id,channel,funnel_stage,touch_position,touch_timestamp,cost,converted,conversion_timestamp,revenue
+1,linkedin_ads,awareness,1,2024-07-12 09:00:00,10,1,2024-07-15 13:00:00,100
+1,google_search,consideration,2,2024-07-13 09:00:00,12,1,2024-07-15 13:00:00,100
+1,email_nurture,decision,3,2024-07-15 09:00:00,4,1,2024-07-15 13:00:00,100
+2,organic_search,awareness,1,2024-08-01 09:00:00,0,0,,0
+2,webinar,consideration,2,2024-08-02 09:00:00,0,0,,0
